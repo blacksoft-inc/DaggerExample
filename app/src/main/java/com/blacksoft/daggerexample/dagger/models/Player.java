@@ -21,6 +21,11 @@ public class Player {
         this.shoes = shoes;
     }
 
+    @Inject
+    public void wear(ChangeRoom changeRoom) {
+        changeRoom.wear(this);
+    }
+
     //
     public void plays() {
         Log.d(TAG, "plays now !");
