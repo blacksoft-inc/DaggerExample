@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.blacksoft.daggerexample.dagger.components.DaggerPlayerComponent;
+import com.blacksoft.daggerexample.dagger.models.Player;
+
 /**
  * @author AbdelWadoud Rasmi
  * <p>
@@ -16,5 +19,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //
+        Player player = DaggerPlayerComponent.create().getPlayer();
     }
 }
