@@ -1,5 +1,6 @@
 package com.blacksoft.daggerexample.dagger.components;
 
+import com.blacksoft.daggerexample.MainActivity;
 import com.blacksoft.daggerexample.dagger.models.Player;
 
 import dagger.Component;
@@ -13,4 +14,6 @@ import dagger.Component;
 public interface PlayerComponent {
 
     Player getPlayer();
+
+    void inject(MainActivity mainActivity);
 }

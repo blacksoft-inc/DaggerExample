@@ -21,6 +21,7 @@ public class Player {
         this.shoes = shoes;
     }
 
+    //
     public void plays() {
         Log.d(TAG, "plays now !");
     }

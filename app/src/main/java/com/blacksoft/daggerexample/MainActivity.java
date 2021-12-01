@@ -5,7 +5,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.blacksoft.daggerexample.dagger.components.DaggerPlayerComponent;
+import com.blacksoft.daggerexample.dagger.components.PlayerComponent;
 import com.blacksoft.daggerexample.dagger.models.Player;
+
+import javax.inject.Inject;
 
 /**
  * @author AbdelWadoud Rasmi
@@ -14,12 +17,17 @@ import com.blacksoft.daggerexample.dagger.models.Player;
  * this project is a basic example of the usage of Dagger framework
  */
 public class MainActivity extends AppCompatActivity {
+    @Inject
+    public Player player;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         //
-        Player player = DaggerPlayerComponent.create().getPlayer();
+        PlayerComponent daggerPlayerComponent = DaggerPlayerComponent.create();
+        daggerPlayerComponent.inject(this);
+        //
+        player.plays();
     }
 }
