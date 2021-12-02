@@ -2,6 +2,9 @@ package com.blacksoft.daggerexample.dagger.models;
 
 import android.util.Log;
 
+import com.blacksoft.daggerexample.dagger.models.Shoes.Shoes;
+import com.blacksoft.daggerexample.dagger.models.outfit.Outfit;
+
 import javax.inject.Inject;
 
 /**

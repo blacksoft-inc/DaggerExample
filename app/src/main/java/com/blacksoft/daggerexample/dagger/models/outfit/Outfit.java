@@ -1,4 +1,4 @@
-package com.blacksoft.daggerexample.dagger.models;
+package com.blacksoft.daggerexample.dagger.models.outfit;
 
 import android.util.Log;
 

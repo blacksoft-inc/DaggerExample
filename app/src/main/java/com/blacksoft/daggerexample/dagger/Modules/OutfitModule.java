@@ -1,8 +1,8 @@
 package com.blacksoft.daggerexample.dagger.Modules;
 
-import com.blacksoft.daggerexample.dagger.models.Outfit;
-import com.blacksoft.daggerexample.dagger.models.Short;
-import com.blacksoft.daggerexample.dagger.models.Tshirt;
+import com.blacksoft.daggerexample.dagger.models.outfit.Outfit;
+import com.blacksoft.daggerexample.dagger.models.outfit.Short;
+import com.blacksoft.daggerexample.dagger.models.outfit.Tshirt;
 
 import dagger.Module;
 import dagger.Provides;

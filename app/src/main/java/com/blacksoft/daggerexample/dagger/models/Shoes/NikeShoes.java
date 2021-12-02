@@ -1,19 +1,11 @@
-package com.blacksoft.daggerexample.dagger.models;
+package com.blacksoft.daggerexample.dagger.models.Shoes;
 
 import javax.inject.Inject;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-/**
- * @author AbdelWadoud Rasmi
- * <p>
- * this class is a Shoes class
- */
-public class Shoes {
-    //
+public class NikeShoes implements Shoes{
     @Getter
     @Setter
     private String brand;
@@ -21,11 +13,10 @@ public class Shoes {
     @Setter
     private short size;
 
+
     @Inject
-    public Shoes() {
+    public NikeShoes() {
         this.brand = brand;
         this.size = size;
     }
-
-
 }
