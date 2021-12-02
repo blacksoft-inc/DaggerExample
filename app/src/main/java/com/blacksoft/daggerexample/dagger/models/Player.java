@@ -14,11 +14,13 @@ public class Player {
     //
     private String fullName;
     private double salary;
+    private Outfit outfit;
     private Shoes shoes;
 
     @Inject
-    public Player(Shoes shoes) {
+    public Player(Shoes shoes, Outfit outfit) {
         this.shoes = shoes;
+        this.outfit = outfit;
     }
 
     @Inject
